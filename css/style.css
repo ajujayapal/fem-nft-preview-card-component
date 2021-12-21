@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+*/
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body {
+  background-color: #0d192b;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+#container {
+  width: 375px;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 90%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #14253d;
+}
+
+.card-inner {
+  display: block;
+  padding: 20px;
+}
+
+.card-inner header img {
+  width: 100%;
+}
+
+.card-inner .content .item-text {
+  color: white;
+  font-weight: 600;
+}
+
+.card-inner .content .desc-text {
+  color: #8bacda;
+  font-weight: 300;
+}
+
+.card-inner .content .price-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+}
+
+.card-inner .content .price-text span:first-child {
+  position: relative;
+  color: #00fff7;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.card-inner .content .price-text span:first-child::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 0;
+  background: url(../images/icon-ethereum.svg) no-repeat;
+  background-size: contain;
+}
+
+.card-inner .content .price-text :last-child {
+  position: relative;
+  color: #8bacda;
+}
+
+.card-inner .content .price-text :last-child::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  left: -25px;
+  top: 2px;
+  background: url(../images/icon-clock.svg) no-repeat top left;
+  background-size: contain;
+}
+
+.card-inner footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #2f415b;
+}
+
+.card-inner footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.card-inner footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.card-inner footer .footer-text::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/image-avatar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid white;
+  margin-right: 20px;
+}
+
+.card-inner footer .footer-text span:nth-child(1) {
+  color: #8bacda;
+}
+
+.card-inner footer .footer-text span:nth-child(2) {
+  color: white;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
